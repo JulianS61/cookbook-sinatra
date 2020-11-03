@@ -1,0 +1,6 @@
+name,description,rating,prep_time,done
+Pizza,Cheese & Bacon,No Rating,0 min,true
+Pasta,peperonchino,No Rating,0 min,true
+Tarte,Apple pie,No Rating,0 min,true
+Mojito Fraise,"Ingrédients : rhum cubain (havana club, bacardi) ,feuille de menthe ,citron vert ,fraises ,jus de fraises ,sirop de sucre de canne .Réalisez la recette ""Mojito Fraise"" directement dans le verre.Coupez le demi citron...",3.1,"",false
+Rhum Fraise,"Ingrédients : rhum blanc ,fraises ,sucre roux (cassonade) .Réalisez la recette ""Rhum Fraise"" directement en bouteilles.Couper les fraises en 2, ajouter les morceaux de sucre roux et verser le rhum.Servir dans un...",3,"",false

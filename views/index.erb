@@ -1,0 +1,23 @@
+<h1>My Recipes Cookbook</h1>
+
+<ul>
+  <% @recipes.each_with_index do |recipe,index| %>
+  <% done_button="<button type=\"button\" style=\"margin-right:5\"><a href=\"./#{index}\" style=\"text-decoration:none; color:inherit\">Done ?</a></button>" %>
+  <% remove_button="<button type=\"button\" style=\"margin-left:5\"><a href=\"./recipes/#{index}\" style=\"text-decoration:none; color:inherit\">&#10060;</a></button>" %>
+      <li>
+        <h3 style="display:flex; align-items:center">
+          <% if recipe.done? %>
+            😋
+          <% else %>
+            <%= done_button %>
+          <% end %>
+          <%= recipe.name %>
+          <%= remove_button %>
+        </h3>
+      </li>
+  <% end %>
+</ul>
+
+<button type="button"><a href="./new" style="text-decoration:none; color:inherit">Create a new recipe</a></button>
+
+<button type="button"><a href="./import" style="text-decoration:none; color:inherit">Import a recipe from marmiton</a></button>

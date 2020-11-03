@@ -1,0 +1,24 @@
+<h1>Import a recipe from Marmiton</h1>
+
+<form action="/import" method="post">
+  <label for="keyword">What type of recipe do you want to search for :</label><br>
+  <input type="text" id="keyword" name="keyword"><br><br>
+  <input type="submit" value="Import">
+</form>
+
+<% unless @keyword == nil %>
+<br>
+<br>
+<h1>First 5 recipes from Marmiton about "<%= @keyword %>"</h1>
+<ul>
+  <% @import_recipes.each_with_index do |recipe, id| %>
+  <% add_button="<button type=\"button\" style=\"margin-right:5\"><a href=\"./import/#{id}\" style=\"text-decoration:none; color:inherit\">Add</a></button>" %>
+      <li>
+        <h3 style="display:flex; align-items:center">
+          <%= add_button %>
+          <%= recipe.name %>
+        </h3>
+      </li>
+  <% end %>
+</ul>
+<% end %>
